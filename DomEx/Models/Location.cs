@@ -25,10 +25,10 @@ namespace DomEx.Models
                     description += Exits[i].Name;
                     if (i != Exits.Length - 1)
                     {
-                        description += ",";
+                        description += ", ";
                     }
                 }
-                description += ".";
+                description += ". ";
                 return description;
             }
         }

@@ -53,11 +53,15 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\IHasExteriorDoor.cs" />
+    <Compile Include="Models\iHidingPlace.cs" />
     <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\Opponent.cs" />
     <Compile Include="Models\Outside.cs" />
     <Compile Include="Models\OutsideWithDoor.cs" />
+    <Compile Include="Models\OutsideWithHidingPlaces.cs" />
     <Compile Include="Models\Room.cs" />
     <Compile Include="Models\RoomWithDoor.cs" />
+    <Compile Include="Models\RoomWithHidingPlaces.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

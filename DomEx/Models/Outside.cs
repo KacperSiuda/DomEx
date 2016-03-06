@@ -19,10 +19,10 @@ namespace DomEx.Models
         {
             get
             {
-                string description = null;
+                string description = base.Description;
                 if (hot == true)
                 {
-                    description = "Tutaj jest za gorąco";
+                    description = "Tutaj jest za gorąco.";
                 }
                 return description;
             } 

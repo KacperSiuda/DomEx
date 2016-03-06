@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace DomEx.Models
 {
-    public class RoomWithDoor : Room, IHasExteriorDoor
+    public class RoomWithDoor : RoomWithHidingPlaces, IHasExteriorDoor
     {
-        public RoomWithDoor(string name, string decoration, string doorDescription) : base(name, decoration)
-        {
-            this.DoorDescription = doorDescription;
-        }
+
 
         public string DoorDescription { get; set; }
         public Location DoorLocation { get; set; }
 
+        public RoomWithDoor(string name, string decoration,
+            string hidingPlaces, string doorDescription) : base(name, decoration, hidingPlaces)
+        {
+            this.DoorDescription = doorDescription;
+        }
     }
 }

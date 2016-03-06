@@ -19,8 +19,8 @@ namespace DomEx.Models
         {
             get
             {
-                string description = "Widzisz tutaj " + decoration;
-                return description;
+                return base.Description + "Widzisz tutaj " + decoration + ". ";
+
             }
         }
     }
