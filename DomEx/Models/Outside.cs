@@ -19,7 +19,7 @@ namespace DomEx.Models
         {
             get
             {
-                string description;
+                string description = null;
                 if (hot == true)
                 {
                     description = "Tutaj jest za gorąco";

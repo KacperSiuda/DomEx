@@ -12,8 +12,8 @@ namespace DomEx.Models
         {
             Name = name;
         }
-        public string Name { get; set; }
-        public Location[] Exits { get; private set; }
+        public string Name { get; private set; }
+        public Location[] Exits { get; set; }
 
         public virtual string Description
         {
@@ -36,4 +36,4 @@ namespace DomEx.Models
 
 
 }
-}
+

@@ -9,7 +9,7 @@ namespace DomEx.Models
     public interface IHasExteriorDoor
     {
         string DoorDescription { get; set; }
-        Location DoorLocation { get; }
+        Location DoorLocation { get; set; }
 
     }
 }

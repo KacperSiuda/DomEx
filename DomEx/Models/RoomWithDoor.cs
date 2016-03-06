@@ -8,11 +8,13 @@ namespace DomEx.Models
 {
     public class RoomWithDoor : Room, IHasExteriorDoor
     {
-        public string DoorDescription { get; set; }
-        public Location DoorLocation { get; }
-
-        public RoomWithDoor(string name) : base(name)
+        public RoomWithDoor(string name, string decoration, string doorDescription) : base(name, decoration)
         {
+            this.DoorDescription = doorDescription;
         }
+
+        public string DoorDescription { get; set; }
+        public Location DoorLocation { get; set; }
+
     }
 }
